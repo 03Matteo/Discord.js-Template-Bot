@@ -2,7 +2,7 @@
   "name": "testing-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/bot.js",
+  "main": "./src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ."
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/03Matteo/Testing-Bot#readme",
   "dependencies": {
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.3.0"
   }
 }
