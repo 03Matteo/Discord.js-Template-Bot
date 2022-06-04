@@ -7,7 +7,7 @@ module.exports = class Commands {
         //add any option here
     }) {
         this.client = client;
-        this.con = { enabled, guildOnly, ownerOnly };
         this.name = name;
+        this.con = { enabled, guildOnly, ownerOnly };
     }
 }

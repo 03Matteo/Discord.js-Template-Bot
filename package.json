@@ -1,23 +1,10 @@
 {
-  "name": "testing-bot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "template-bot",
   "main": "./src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
     "dev": "nodemon ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/03Matteo/Discord.js-Template-Bot.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/03Matteo/Discord.js-Template-Bot/issues"
-  },
-  "homepage": "https://github.com/03Matteo/Discord.js-Template-Bot#readme",
   "dependencies": {
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",

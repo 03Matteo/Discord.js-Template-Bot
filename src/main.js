@@ -1,12 +1,12 @@
 require('dotenv').config()
 
-const Testing = require('./bases/Testing');
-const client = new Testing()
+const MadBot = require('./bases/MadBot');
+const client = new MadBot();
 
 const { readdirSync } = require('fs');
 const { resolve } = require('path');
 
-const main = async () => {
+const init = async () => {
     try {
         const dirs = await readdirSync(resolve(__dirname, './commands'));
         client.logger.log(`Loading ${dirs.length} categories.`, 'log');
@@ -43,7 +43,7 @@ const main = async () => {
     }
 }
 
-main();
+init();
 
 client.on('disconnect', () => client.logger.log('Bot is disconnecting...', 'warn'))
     .on('reconnecting', () => client.logger.log('Bot reconnecting...', 'log'))

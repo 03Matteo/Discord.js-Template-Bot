@@ -10,9 +10,7 @@ module.exports = class Ping extends Commands {
         })
     }
 
-    async run(message) {
-        const { channel } = message;
-
+    async run({ channel }) {
         channel.send({ content: 'Pong!' })
     }
 }

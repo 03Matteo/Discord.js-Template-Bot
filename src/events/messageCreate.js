@@ -3,8 +3,7 @@ module.exports = class {
         this.client = client;
     }
 
-    async run(message) {
-        const { author, guild, member, content, channel } = message;
+    async run({ author, guild, member, content, channel }) {
         const client = this.client;
 
         if (author.bot || author.webhook) return;

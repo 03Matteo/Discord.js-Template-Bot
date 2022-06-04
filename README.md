@@ -1,2 +1,2 @@
 # Discord.js-Template-Bot
-A simple classes based D.js bot
+A simple classes based Discord.js bot

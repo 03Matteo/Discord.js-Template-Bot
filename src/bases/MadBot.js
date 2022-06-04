@@ -6,7 +6,7 @@ const { sep } = require('path');
 
 const { connect } = require('mongoose');
 
-module.exports = class Testing extends Client {
+module.exports = class MadBot extends Client {
     constructor() {
         super({
             intents: 32767
