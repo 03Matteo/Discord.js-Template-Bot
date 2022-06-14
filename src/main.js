@@ -44,12 +44,3 @@ const init = async () => {
 }
 
 init();
-
-client.on('disconnect', () => client.logger.log('Bot is disconnecting...', 'warn'))
-    .on('reconnecting', () => client.logger.log('Bot reconnecting...', 'log'))
-    .on('error', (e) => client.logger.log(e, 'error'))
-    .on('warn', (m) => client.logger.log(m, 'warn'));
-
-process.on('unhandledRejection', (err) => {
-    client.logger.log(err, 'error');
-});

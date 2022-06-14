@@ -43,7 +43,8 @@ module.exports = class MadBot extends Client {
             await connect(this.DB_URL, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
-                useFindAndModify: false
+                useFindAndModify: false,
+                keepAlive: true
             })
 
             this.logger.log('Connected to MongoDB!', 'log')
